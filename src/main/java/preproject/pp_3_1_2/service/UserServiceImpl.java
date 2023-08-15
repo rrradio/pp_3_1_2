@@ -1,10 +1,10 @@
-package pp312.springBoot.service;
+package preproject.pp_3_1_2.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import pp312.springBoot.dao.UserDAO;
-import pp312.springBoot.model.User;
+import preproject.pp_3_1_2.dao.UserDAO;
+import preproject.pp_3_1_2.model.User;
 
 import java.util.List;
 
@@ -30,8 +30,8 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public User show(int id) {
-        return userDAO.show(id);
+    public User getUserById(int id) {
+        return userDAO.getUserById(id);
     }
 
     @Transactional
@@ -40,6 +40,7 @@ public class UserServiceImpl implements UserService {
         userDAO.update(id, user);
     }
 
+    @Transactional
     @Override
     public void delete(int id) {
         userDAO.delete(id);

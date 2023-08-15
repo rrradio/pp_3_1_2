@@ -8,8 +8,8 @@
 		<version>3.1.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>pp.3.1.2</groupId>
-	<artifactId>springBoot</artifactId>
+	<groupId>pp_3_1_2</groupId>
+	<artifactId>preproject.pp_3_1_2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>springBoot</name>
 	<description>Demo project for Spring Boot</description>
